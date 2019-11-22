@@ -10,7 +10,7 @@ char * getRoman(int num) {
     return "-Out of limits.-";
   }
   
-  char * output = malloc(100);
+  char * output = (char*)malloc(100);
 
   //Since 1,4,5,9 and their multiples by 10 have special expressions;
   int values[12] = {1000, 900, 500, 100,  90,  50,  40,  10,   9,   5,   4,   1};
